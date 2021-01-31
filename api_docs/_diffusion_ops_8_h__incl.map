@@ -1,0 +1,25 @@
+<map id="DiffusionOps.H" name="DiffusionOps.H">
+<area shape="rect" id="node2" href="$_m_l_m_g_options_8_h.html" title="amr&#45;wind/core/MLMGOptions.H" alt="" coords="1761,87,1984,114"/>
+<area shape="rect" id="node7" href="$_p_d_e_traits_8_h.html" title="amr&#45;wind/equation_systems\l/PDETraits.H" alt="" coords="3117,80,3324,121"/>
+<area shape="rect" id="node8" href="$_scheme_traits_8_h.html" title="amr&#45;wind/equation_systems\l/SchemeTraits.H" alt="" coords="3067,169,3273,211"/>
+<area shape="rect" id="node9" href="$_p_d_e_ops_8_h.html" title="amr&#45;wind/equation_systems\l/PDEOps.H" alt="" coords="2436,80,2643,121"/>
+<area shape="rect" id="node14" href="$_p_d_e_helpers_8_h.html" title="amr&#45;wind/equation_systems\l/PDEHelpers.H" alt="" coords="1975,169,2181,211"/>
+<area shape="rect" id="node47" href="$diffusion_8_h.html" title="amr&#45;wind/diffusion\l/diffusion.H" alt="" coords="2797,80,2940,121"/>
+<area shape="rect" id="node10" href="$_field_utils_8_h.html" title="amr&#45;wind/core/FieldUtils.H" alt="" coords="1224,355,1417,382"/>
+<area shape="rect" id="node36" href="$_turbulence_model_8_h.html" title="amr&#45;wind/turbulence\l/TurbulenceModel.H" alt="" coords="3356,259,3512,300"/>
+<area shape="rect" id="node41" href="$_i_o_manager_8_h.html" title="amr&#45;wind/utilities\l/IOManager.H" alt="" coords="3229,348,3365,389"/>
+<area shape="rect" id="node43" href="$_c_f_d_sim_8_h.html" title="amr&#45;wind/CFDSim.H" alt="" coords="2463,177,2615,203"/>
+<area shape="rect" id="node11" href="$_field_desc_types_8_h.html" title="amr&#45;wind/core/FieldDescTypes.H" alt="" coords="1970,437,2202,464"/>
+<area shape="rect" id="node15" href="$_p_d_e_fields_8_h.html" title="amr&#45;wind/equation_systems\l/PDEFields.H" alt="" coords="661,348,868,389"/>
+<area shape="rect" id="node17" href="$_sim_time_8_h.html" title="amr&#45;wind/core/SimTime.H" alt="" coords="104,355,295,382"/>
+<area shape="rect" id="node20" href="$_field_repo_8_h.html" title="amr&#45;wind/core/FieldRepo.H" alt="" coords="2307,266,2502,293"/>
+<area shape="rect" id="node31" href="$_field_fill_patch_ops_8_h.html" title="amr&#45;wind/core/FieldFillPatch\lOps.H" alt="" coords="881,259,1083,300"/>
+<area shape="rect" id="node33" href="$_field_b_c_ops_8_h.html" title="amr&#45;wind/core/FieldBCOps.H" alt="" coords="1352,266,1559,293"/>
+<area shape="rect" id="node22" href="$_field_8_h.html" title="amr&#45;wind/core/Field.H" alt="" coords="2005,355,2167,382"/>
+<area shape="rect" id="node25" href="$_int_field_8_h.html" title="amr&#45;wind/core/IntField.H" alt="" coords="2445,355,2625,382"/>
+<area shape="rect" id="node27" href="$_scratch_field_8_h.html" title="amr&#45;wind/core/ScratchField.H" alt="" coords="1770,355,1981,382"/>
+<area shape="rect" id="node37" href="$_factory_8_h.html" title="amr&#45;wind/core/Factory.H" alt="" coords="3439,355,3618,382"/>
+<area shape="rect" id="node44" href="$_p_d_e_base_8_h.html" title="amr&#45;wind/equation_systems\l/PDEBase.H" alt="" coords="2577,259,2784,300"/>
+<area shape="rect" id="node46" href="$_physics_8_h.html" title="amr&#45;wind/core/Physics.H" alt="" coords="2808,266,2991,293"/>
+<area shape="rect" id="node45" href="$_coll_mgr_8_h.html" title="amr&#45;wind/core/CollMgr.H" alt="" coords="3023,355,3205,382"/>
+</map>
