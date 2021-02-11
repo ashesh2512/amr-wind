@@ -5,6 +5,7 @@ target_sources(${amr_wind_lib_name}
   BoussinesqBubbleFieldInit.cpp
   RayleighTaylor.cpp
   RayleighTaylorFieldInit.cpp
+  StokesOscillatingSphere.cpp
   TaylorGreenVortex.cpp
   FreeStream.cpp
   ConvectingTaylorVortex.cpp
