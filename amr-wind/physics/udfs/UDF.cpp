@@ -3,6 +3,7 @@
 #include "amr-wind/core/FieldRepo.H"
 #include "amr-wind/physics/udfs/LinearProfile.H"
 #include "amr-wind/physics/udfs/PowerLawProfile.H"
+#include "amr-wind/physics/udfs/StokesOscillatingSphereProfile.H"
 
 #include "AMReX_ParmParse.H"
 
@@ -55,6 +56,7 @@ void UDFImpl<T>::operator()(int level, const amrex::Geometry& geom)
 template class UDFImpl<LinearProfile<1>>;
 template class UDFImpl<LinearProfile<AMREX_SPACEDIM>>;
 template class UDFImpl<PowerLawProfile>;
+template class UDFImpl<StokesOscillatingSphereProfile>;
 
 } // namespace udf
 } // namespace amr_wind
