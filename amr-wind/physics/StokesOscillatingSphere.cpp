@@ -54,7 +54,7 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real VExact::operator()(
     const amrex::GpuComplex<amrex::Real> lambda,
     const amrex::GpuComplex<amrex::Real> b_coeff,
     const amrex::GpuComplex<amrex::Real> q_coeff,
-    const amrex::GpuComplex<amrex::Real> p_coeff,
+    const amrex::GpuComplex<amrex::Real>,
     const amrex::Vector<amrex::Real> v_coeff,
     const amrex::Real r0,
     const amrex::Real x,
@@ -95,7 +95,7 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real WExact::operator()(
     const amrex::GpuComplex<amrex::Real> lambda,
     const amrex::GpuComplex<amrex::Real> b_coeff,
     const amrex::GpuComplex<amrex::Real> q_coeff,
-    const amrex::GpuComplex<amrex::Real> p_coeff,
+    const amrex::GpuComplex<amrex::Real>,
     const amrex::Vector<amrex::Real> v_coeff,
     const amrex::Real r0,
     const amrex::Real x,
@@ -322,7 +322,7 @@ void StokesOscillatingSphere::initialize_fields(
             nbx, [=] AMREX_GPU_DEVICE(int i, int j, int k) noexcept {
                 const amrex::Real x = problo[0] + i * dx[0] - cen_x;
                 const amrex::Real y = problo[1] + j * dx[1] - cen_y;
-                const amrex::Real z = problo[2] + j * dx[2] - cen_z;
+                const amrex::Real z = problo[2] + k * dx[2] - cen_z;
                 amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
 
                 if(dist < (r0-eps)) {
