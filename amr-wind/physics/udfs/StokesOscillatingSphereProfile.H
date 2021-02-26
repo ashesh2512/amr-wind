@@ -72,12 +72,6 @@ struct StokesOscillatingSphereProfile
              // get distance of point w.r.t. sphere center
              amrex::Real dist = std::sqrt(std::pow(x[0],2)+std::pow(x[1],2)+std::pow(x[2],2));
 
-             // solution does not exist inside sphere
-             if(dist < (r0-eps)) {
-               field(iv[0], iv[1], iv[2], comp) = 0.0;
-               return;
-             }
-
              // velocity and pressure coefficients
              amrex::GpuComplex<amrex::Real> b_coeff = amrex::GpuComplex<amrex::Real>{0.,1.} *
                                                       amrex::exp(amrex::GpuComplex<amrex::Real>{0.,-1.}*omega*0.0) *

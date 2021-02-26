@@ -24,11 +24,6 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real UExact::operator()(
     // get distance of point w.r.t. sphere center
     amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
 
-    // solution does not exist inside sphere
-    if(dist < (r0-eps)) {
-      return 0.0;
-    }
-
     // dimensionless distance metrics
     amrex::GpuComplex<amrex::Real> cap_r  = lambda*dist/r0;
     amrex::GpuComplex<amrex::Real> cap_r2 = amrex::pow(cap_r,2.);
@@ -64,11 +59,6 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real VExact::operator()(
 {
     // get distance of point w.r.t. sphere center
     amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
-
-    // solution does not exist inside sphere
-    if(dist < (r0-eps)) {
-      return 0.0;
-    }
 
     // dimensionless distance metrics
     amrex::GpuComplex<amrex::Real> cap_r  = lambda*dist/r0;
@@ -106,11 +96,6 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real WExact::operator()(
     // get distance of point w.r.t. sphere center
     amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
 
-    // solution does not exist inside sphere
-    if(dist < (r0-eps)) {
-      return 0.0;
-    }
-
     // dimensionless distance metrics
     amrex::GpuComplex<amrex::Real> cap_r  = lambda*dist/r0;
     amrex::GpuComplex<amrex::Real> cap_r2 = amrex::pow(cap_r,2.);
@@ -147,11 +132,6 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real GpxExact::operator()(
     // get distance of point w.r.t. sphere center
     amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
 
-    // solution does not exist inside sphere
-    if(dist < (r0-eps)) {
-      return 0.0;
-    }
-
     amrex::Real v_dot_x = v_coeff[0]*x+v_coeff[1]*y+v_coeff[2]*z;
 
     return (p_coeff*(v_coeff[0]/(std::pow(dist,3.)+eps) - 3.*v_dot_x*x/(std::pow(dist,5.)+eps))).real();
@@ -172,11 +152,6 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real GpyExact::operator()(
     // get distance of point w.r.t. sphere center
     amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
 
-    // solution does not exist inside sphere
-    if(dist < (r0-eps)) {
-      return 0.0;
-    }
-
     amrex::Real v_dot_x = v_coeff[0]*x+v_coeff[1]*y+v_coeff[2]*z;
 
     return (p_coeff*(v_coeff[1]/(std::pow(dist,3.)+eps) - 3.*v_dot_x*y/(std::pow(dist,5.)+eps))).real();
@@ -196,11 +171,6 @@ AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE amrex::Real GpzExact::operator()(
 {
     // get distance of point w.r.t. sphere center
     amrex::Real dist = std::sqrt(std::pow(x,2)+std::pow(y,2)+std::pow(z,2));
-
-    // solution does not exist inside sphere
-    if(dist < (r0-eps)) {
-      return 0.0;
-    }
 
     amrex::Real v_dot_x = v_coeff[0]*x+v_coeff[1]*y+v_coeff[2]*z;
 
