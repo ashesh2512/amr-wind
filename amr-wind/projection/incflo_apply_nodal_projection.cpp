@@ -127,7 +127,7 @@ void incflo::ApplyProjection(
     auto& grad_p = m_repo.get_field("gp");
     auto& pressure = m_repo.get_field("p");
     auto& velocity = icns().fields().field;
-    auto& mesh_fac = m_repo.get_field("mesh_scale_fac");
+    auto& mesh_fac = m_repo.get_field("mesh_scaling_factor");
 
     // Add the ( grad p /ro ) back to u* (note the +dt)
     // Also account for mesh mapping in the RHS -  J/fac * u + 1/fac * grad(p) * dt/rho
